@@ -7,11 +7,9 @@ import styled from 'styled-components';
 const Footer = () => {
   return (
     <Wrapper>
-      {/* <span> */}
       <h5>
         Made with <span>&hearts;</span>{' '}
       </h5>
-      {/* </span> */}
       <h5>&copy;{new Date().getFullYear()}</h5>
     </Wrapper>
   );
