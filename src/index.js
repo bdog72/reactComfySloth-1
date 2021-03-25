@@ -14,11 +14,15 @@ import { CartProvider } from './context/cart_context';
 import { UserProvider } from './context/user_context';
 
 import { Auth0Provider } from '@auth0/auth0-react';
+// import AppRouter from './practice/AppRouter';
 
 ReactDOM.render(
   <ProductsProvider>
     <FilterProvider>
-      <App />
+      <CartProvider>
+        <App />
+        {/* <AppRouter /> */}
+      </CartProvider>
     </FilterProvider>
   </ProductsProvider>,
   document.getElementById('root')
