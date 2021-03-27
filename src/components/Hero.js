@@ -13,6 +13,8 @@ const Hero = () => {
   return (
     <Wrapper className='section-center'>
       <article className='content'>
+        <h5>Email Login: test@test.com</h5>
+        <h5>Password Login: test1234_</h5>
         <h1>
           design your <br /> comfort zone
         </h1>
@@ -38,6 +40,10 @@ const Wrapper = styled.section`
   place-items: center;
   .img-container {
     display: none;
+  }
+
+  h5 {
+    text-transform: lowercase;
   }
 
   p {
