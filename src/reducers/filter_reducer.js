@@ -11,7 +11,7 @@ import {
   FILTER_PRODUCTS,
   CLEAR_FILTERS,
 } from '../actions';
-import products_reducer from './products_reducer';
+// import products_reducer from './products_reducer';
 
 const filter_reducer = (state, action) => {
   if (action.type === LOAD_PRODUCTS) {
@@ -113,7 +113,7 @@ const filter_reducer = (state, action) => {
     // colors
     if (color !== 'all') {
       tempProducts = tempProducts.filter((product) => {
-        return product.colors.find((c) => c == color);
+        return product.colors.find((c) => c === color);
       });
     }
 
