@@ -14,7 +14,7 @@ const Hero = () => {
     <Wrapper className='section-center'>
       <article className='content'>
         <h5>Email Login: test@test.com</h5>
-        <h5>Password Login: test1234_</h5>
+        <h5 className='hero__h5'>Password Login: test1234_</h5>
         <h1>
           design your <br /> comfort zone
         </h1>
@@ -44,6 +44,12 @@ const Wrapper = styled.section`
 
   h5 {
     text-transform: lowercase;
+    text-align: center;
+    color: red;
+  }
+
+  .hero__h5 {
+    margin-bottom: 40px;
   }
 
   p {
