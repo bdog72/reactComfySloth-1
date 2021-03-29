@@ -98,10 +98,10 @@ const CheckoutForm = () => {
       setError(null);
       setProcessing(false);
       setSucceeded(true);
-      // setTimeout(() => {
-      //   clearCart();
-      //   history.push('/');
-      // }, 10000);
+      setTimeout(() => {
+        clearCart();
+        history.push('/');
+      }, 10000);
     }
   };
 
